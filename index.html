@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Tip Calculator</title>
+
 </head>
 <body>
+
+    <section>
+        <h2>Trinkgeldrechner</h2>
     
+        <label for="rechnungsbetrag">Rechnungsbetrag:</label>
+        <input type="number" id="rechnungsbetrag" >
+    
+        <label for="anzahlPersonen">Anzahl der Personen:</label>
+        <input type="number" id="anzahlPersonen">
+    
+        <label for="serviceBewertung">Service-Bewertung:</label>
+        <select id="serviceBewertung" >
+        <option value="">Wie war der Service</option>
+        <option value="schlecht">Schlechter Service</option>
+        <option value="mittel">Mittlerer Service</option>
+        <option value="super">Super Service</option>
+        </select>
+    
+        <button onclick="tipCalc()">Berechnen</button>
+    
+        <div id="ergebnisse">
+            <p class=""></p>
+        </div>
+    </section>
+
+<script src="./assets/js/main.js"></script>
+
 </body>
 </html>
